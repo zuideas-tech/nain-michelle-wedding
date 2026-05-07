@@ -384,12 +384,15 @@
             </div>
 
             <h2 class="text-xl md:text-2xl italic leading-relaxed text-gray-700">
-                "¡Te amaré hasta que el sol deje de brillar!"
+                "¡Acompáñanos a escribir un nuevo capítulo!"
             </h2>
         </div>
         <div class="photo-slider">
             <div class="polaroid-item">
-                <img src="https://lh3.googleusercontent.com/d/1aBM5f4PlKt3-Z9IeiG0IctR3y5OoPRkL" alt="los tres">
+                <img src="https://lh3.googleusercontent.com/d/1QthNDuMb27oEbZj2Y4QBoL9QFyOKn1PH" alt="los tres">
+            </div>
+            <div class="polaroid-item">
+                <img src="https://lh3.googleusercontent.com/d/1tZnflCmpXA--foW3xzlqiDVlXG0GzCD0" alt="los tres">
             </div>
             <div class="polaroid-item">
                 <img src="https://lh3.googleusercontent.com/d/1FYcpGtD_sL6Fa67yXF0u1SSKyP1KJmm_" alt="Nuestras manos">
@@ -435,7 +438,8 @@
             </div>
             <p class="text-sm text-gray-500 italic mb-1">Hora: 02:00 pm</p>
             <p class="text-sm font-semibold mb-8">Parroquia Nuestra Señora del Rosario<br>
-                (al lado del Colegio San Luis)</p>
+                (al lado del Colegio San Luis)<br>
+                Mérida, Venezuela</p>
             <a href="https://www.google.com/maps/place/Parroquia+Nuestra+Se%C3%B1ora+del+Rosario/@8.664497,-71.588355,17z/data=!3m1!4b1!4m6!3m5!1s0x8e640bf08a052783:0xc284c7542a59d011!8m2!3d8.664497!4d-71.5857801!16s%2Fg%2F11fmlgqdww?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank" class="btn-gold-action">¿Cómo llegar?</a>
         </div>
@@ -554,12 +558,7 @@
                         class="w-full border-b border-gray-200 py-2 focus:outline-none focus:border-[#b97600] text-sm"
                         required>
                 </div>
-                <div>
-                    <label class="block text-[10px] uppercase tracking-widest text-gray-400 mb-1">Cédula</label>
-                    <input id="form-rut" type="text" placeholder="12.345.678-9"
-                        class="w-full border-b border-gray-200 py-2 focus:outline-none focus:border-[#b97600] text-sm"
-                        required>
-                </div>
+
                 <div>
                     <label class="block text-[10px] uppercase tracking-widest text-gray-400 mb-1">¿Asistirás?</label>
                     <select id="form-attendance"
@@ -688,9 +687,8 @@
         document.getElementById('rsvp-form').addEventListener('submit', (e) => {
             e.preventDefault();
             const name = document.getElementById('form-name').value;
-            const rut = document.getElementById('form-rut').value;
             const att = document.getElementById('form-attendance').value;
-            const text = `¡Hola! Confirmo mi asistencia para la boda. Nombre: ${name}, Cédula: ${rut}, Asistencia: ${att}.`;
+            const text = `¡Hola! Confirmo mi asistencia para la boda. Nombre: ${name}, Asistencia: ${att}.`;
             window.open(`https://wa.me/584122587478?text=${encodeURIComponent(text)}`, '_blank');
         });
 
